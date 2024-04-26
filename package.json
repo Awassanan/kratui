@@ -1,0 +1,29 @@
+{
+  "name": "kratui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "set DEBUG=app & nodemon app.js",
+    "debug": "set DEBUG=* & nodemon app.js"
+  },
+  "author": "Nene",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "chalk": "^5.3.0",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "delay": 2000,
+    "env": {
+      "PORT": 3000
+    }
+  }
+}
