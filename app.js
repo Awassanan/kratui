@@ -22,10 +22,9 @@ app.set("view engine", "ejs");
 app.use("/bunnies", bunniesRouter)
 
 app.get("/", (req, res) => {
-    res.render("index", {bunnies});
+    res.render("index", { bunnies });
 })
 
 app.listen(PORT, () => {
-    // console.log("Listening on port " + chalk.green(port))
     debug("Listening on port" + chalk.green(" :", PORT))
 })
