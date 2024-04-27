@@ -138,7 +138,7 @@ body {
     }
 
     100% {
-        transform: translateX(-13500px);
+        transform: translateX(-12225px);
         /* Total width of 27 slides */
     }
 }
