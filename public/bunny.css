@@ -1,142 +1,185 @@
-        /* GLOBAL STYLES
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+/* GLOBAL STYLES
 -------------------------------------------------- */
-        /* Padding below the footer and lighter body text */
+/* Padding below the footer and lighter body text */
 
-        body {
-            padding-top: 3rem;
-            /* padding-bottom: 3rem; */
-            color: rgb(var(--bs-tertiary-color-rgb));
-        }
+body {
+    padding-top: 3rem;
+    /* padding-bottom: 3rem; */
+    color: rgb(var(--bs-tertiary-color-rgb));
+}
 
 
-        /* CUSTOMIZE THE CAROUSEL
+/* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
 
-        /* Carousel base class */
-        .carousel {
-            margin-bottom: 4rem;
-        }
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
 
-        /* Since positioning the image, we need to help out the caption */
-        .carousel-caption {
-            bottom: 3rem;
-            z-index: 10;
-        }
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
 
-        /* Declare heights because of positioning of img element */
-        .carousel-item {
-            height: 32rem;
-        }
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
 
 
-        /* MARKETING CONTENT
+/* MARKETING CONTENT
   -------------------------------------------------- */
 
-        /* Center align the text within the three columns below the carousel */
-        .marketing .col-lg-4 {
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
+/* Center align the text within the three columns below the carousel */
 
-        /* rtl:begin:ignore */
-        .marketing .col-lg-4 p {
-            margin-right: .75rem;
-            margin-left: .75rem;
-        }
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
 
-        /* rtl:end:ignore */
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+/* rtl:end:ignore */
 
 
-        /* Featurettes
+/* Featurettes
   ------------------------- */
 
-        .featurette-divider {
-            margin: 3rem 0;
-            /* Space out the Bootstrap <hr> more */
-        }
+.featurette-divider {
+    margin: 3rem 0;
+    /* Space out the Bootstrap <hr> more */
+}
 
-        /* Thin out the marketing headings */
-        /* rtl:begin:remove */
-        .featurette-heading {
-            letter-spacing: -.05rem;
-        }
+/* Thin out the marketing headings */
+/* rtl:begin:remove */
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
 
-        /* rtl:end:remove */
+/* rtl:end:remove */
 
-        /* RESPONSIVE CSS
+/* RESPONSIVE CSS
   -------------------------------------------------- */
 
-        @media (min-width: 40em) {
+@media (min-width: 40em) {
 
-            /* Bump up size of carousel content */
-            .carousel-caption p {
-                margin-bottom: 1.25rem;
-                font-size: 1.25rem;
-                line-height: 1.4;
-            }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
 
-            .featurette-heading {
-                font-size: 50px;
-            }
-        }
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
 
-        @media (min-width: 62em) {
-            .featurette-heading {
-                margin-top: 2rem;
-            }
-        }
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 2rem;
+    }
+}
 
-        /* Slideshow */
-        #slideshow {
-            width: 100%;
-            /* margin: 8rem auto; */
-            /* Center the slideshow horizontally */
-            overflow: hidden;
-        }
+/* Slideshow */
+#slideshow {
+    width: 100%;
+    /* margin: 8rem auto; */
+    /* Center the slideshow horizontally */
+    overflow: hidden;
+}
 
-        .slide-show-container {
-            width: 13500px;
-            /* 27 slides x 500px width */
-            position: relative;
-            animation: slide 120s linear infinite;
-            /* Adjust timing and animation type */
-        }
+.slide-show-container {
+    width: 13500px;
+    /* 27 slides x 500px width */
+    position: relative;
+    animation: slide 120s linear infinite;
+    /* Adjust timing and animation type */
+}
 
-        .slide-show-container section {
-            width: 500px;
-            height: calc(100vh - 48px);
-            float: left;
-            background-size: cover;
-            background-position: center;
-        }
+.slide-show-container section {
+    width: 500px;
+    height: calc(100vh - 48px);
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
 
-        .slide-caption {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            max-width: 80%;
-        }
-        
-        .slide-caption h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        
-        .slide-caption p {
-            font-size: 16px;
-            margin-bottom: 0;
-        }
+.slide-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    max-width: 80%;
+}
 
-        @keyframes slide {
-            0% {
-                transform: translateX(0);
-            }
+.slide-caption h2 {
+    /* font-size: 24px; */
+    margin-bottom: 10px;
+}
 
-            100% {
-                transform: translateX(-13500px);
-                /* Total width of 27 slides */
-            }
-        }
+.slide-caption p {
+    /* font-size: 16px; */
+    margin-bottom: 0;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-13500px);
+        /* Total width of 27 slides */
+    }
+}
+
+/* Font Itim*/
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.itim-small {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.itim-xsmall {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.itim-large {
+    font-family: "Itim", cursive;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.itim-bold {
+    font-weight: 800;
+}
+
+.text-shadow {
+    text-shadow: black 1px 0 10px;
+}
+
+#bunny-content {
+    margin-top:4rem
+}

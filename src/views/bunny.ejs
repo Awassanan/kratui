@@ -10,14 +10,19 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <title>Bunny</title>
-    <link rel="stylesheet" type="css" href="/bunny.css">
+    <link rel="stylesheet" href="/bunny.css">
+    <!-- import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: rgb(255, 216, 236);">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top itim-small"
+        style="background-color: rgb(255, 216, 236);">
         <div class="container-fluid d-flex justify-content-between align-items-center">
             <div>
-                <a class="navbar-brand" href="#" style="color: rgb(179, 0, 119);">
+                <a class="navbar-brand itim-large itim-bold" href="/" style="color: rgb(179, 0, 119);">
                     <img src="../img/logo.png" width="40px" height="40px" style="margin-left: 8px; margin-right: 8px;">
                     Kratui
                 </a>
@@ -29,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/bunnies">Bunnies</a>
@@ -39,15 +44,15 @@
         </div>
     </nav>
 
-    <div class="container marketing" style="margin-top: 8rem;">
+    <div class="container marketing" id="bunny-content">
         <div class="row featurette">
             <div class="col-md-8">
-                <h2 class="featurette-heading fw-normal lh-1" style="color: rgb(179, 0, 119);">
+                <h2 class="featurette-heading fw-normal lh-1 itim-regular" style="color: rgb(179, 0, 119);">
                     <%=bunny.breed_en%><span class="text-body-secondary">
                             <%=bunny.breed_th%>
                         </span>
                 </h2>
-                <ul>
+                <ul class="itim-xsmall">
                     <li>
                         <strong>ลักษณะเด่น : </strong>
                         <%=bunny.dominance%>
@@ -82,16 +87,18 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-md-4">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="100%"
-                    height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-                    focusable="false">
-                    <title>
-                        <%=bunny.breed_en%>
-                    </title>
-                    <image href="/img/<%=bunny.img%>" width="100%" height="400" />
-                </svg>
+            <div class="col-md-4" style="position: relative;">
+                <!-- First Image -->
+                <img src="/img/<%=bunny.img%>"
+                    class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="100%"
+                    height="400"
+                    style="border-radius: 8px; box-shadow: black 1px 0 20px; margin-top: 3rem; border: 20px solid transparent; border-color: rgb(244, 158, 187);" />
+
+                <!-- Second Image (positioned at top left corner) -->
+                <img src="/img/bunny.png"
+                    style="width: 60px; height: 60px; position: absolute; top: 20px; left: 5px; transform: rotate(-20deg); z-index: 1;">
             </div>
+
         </div>
 </body>
 
