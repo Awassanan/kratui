@@ -3,9 +3,9 @@ Welcome to my web application about Kratui (กระตุ่ย), a Thai slang
 
 ## Prerequisite
 This project is server-side based. To run it locally:
-Clone the project and run it on localhost port 3000.
-Ensure that Node.js is installed on your computer.
-Install project dependencies using npm install.
+- Clone the project and run it on localhost port 3000.
+- Ensure that Node.js is installed on your computer.
+- Install project dependencies using npm install.
 
 ## Usage
 - **Home Page:** The homepage features a carousel showcasing all the bunny breeds I've collected.
